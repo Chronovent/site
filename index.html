@@ -10,6 +10,12 @@
 
   gtag('config', 'G-LDVSM17WTV');
   </script>
+  <script>
+  const user = "contact";
+  const domain = "chronovent.com";
+  const el = document.getElementById("contact");
+  el.innerHTML = `<a href="mailto:${user}@${domain}">${user}@${domain}</a>`;
+</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Chronovent</title>
@@ -55,6 +61,7 @@
     Currently in development
   </div>
   </br>
+  <p id="contact"></p>
   <p>© 2025 Chronovent. All rights reserved.</p>
 </body>
 </html>
