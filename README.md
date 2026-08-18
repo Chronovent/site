@@ -10,4 +10,4 @@ Chronovent is currently under development, and we are working on adding more fea
 
 ## Copyright
 
-© 2025 Chronovent. All rights reserved.
+© 2025-2026 Chronovent. All rights reserved.
