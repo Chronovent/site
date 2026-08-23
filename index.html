@@ -4,29 +4,56 @@
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-LDVSM17WTV"></script>
   <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-LDVSM17WTV');
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-LDVSM17WTV');
   </script>
-  <script>
-  const user = "contact";
-  const domain = "chronovent.com";
-  const el = document.getElementById("contact");
-  el.innerHTML = `<a href="mailto:${user}@${domain}">${user}@${domain}</a>`;
-</script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Chronovent</title>
-  <meta name="description" content="Chronovent is a high-performance discrete event simulation engine designed for efficient modeling and data analysis.">  
-  <meta property="og:title" content="Chronovent - Discrete event simulator">
-  <meta property="og:description" content="Discrete event simulator optimized for high performance.">
-  <meta property="og:url" content="https://chronovent.com">
+  
+  <!-- Indexação e URL Canônica -->
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://chronovent.com/">
+
+  <!-- Título e Descrição Otimizados -->
+  <title>Chronovent | High-Performance Discrete Event Simulation Engine</title>
+  <meta name="description" content="Chronovent is a high-performance discrete event simulation engine. Design, model, and analyze complex dynamic systems with an intuitive visual interface.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Chronovent - High-Performance Discrete Event Simulator">
+  <meta property="og:description" content="Design and run discrete event simulations with a clean, visual interface and high-performance execution.">
+  <meta property="og:url" content="https://chronovent.com/">
+  <meta property="og:site_name" content="Chronovent">
+  <!-- <meta property="og:image" content="https://chronovent.com/og-image.png"> -->
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Chronovent | Discrete Event Simulation Engine">
+  <meta name="twitter:description" content="Efficient discrete event modeling and data analysis.">
+
+  <!-- Schema.org (Dados Estruturados para o Google) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Chronovent",
+    "operatingSystem": "All",
+    "applicationCategory": "DeveloperApplication",
+    "description": "High-performance discrete event simulation engine designed for efficient modeling and data analysis.",
+    "url": "https://chronovent.com"
+  }
+  </script>
+
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
       background-color: #f9fafb;
       color: #1f2937;
       display: flex;
@@ -35,38 +62,71 @@
       justify-content: center;
       min-height: 100vh;
       text-align: center;
+      padding: 1em;
+      box-sizing: border-box;
     }
     h1 {
       font-size: 3em;
       margin-bottom: 0.2em;
+      letter-spacing: -0.02em;
     }
     p {
       font-size: 1.2em;
-      max-width: 600px;
-      margin: 0 1em;
+      max-width: 620px;
+      line-height: 1.6;
+      margin: 0.5em auto;
     }
     .status {
-      margin-top: 2em;
+      margin-top: 1.5em;
+      margin-bottom: 1.5em;
       padding: 0.5em 1.5em;
       background-color: #e0e7ff;
       color: #1e3a8a;
       border-radius: 999px;
-      font-weight: bold;
+      font-weight: 600;
+      display: inline-block;
+    }
+    footer {
+      margin-top: 2em;
+      font-size: 0.9em;
+      color: #6b7280;
+    }
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <h1>Chronovent</h1>
-  <p>
-    A new way to design, understand, and run discrete event simulations — visually and intuitively.
-    Chronovent blends the logic of programming with a clean, diagram-based interface to give you full control without the code.
-  </p>
-  <div class="status">
-    Currently in development
-  </div>
-  </br>
-  <p id="contact"></p>
-  <p>© 2025-2026 Chronovent. All rights reserved.</p>
+
+  <main>
+    <h1>Chronovent</h1>
+    <p>
+      A new way to design, understand, and run <strong>discrete event simulations</strong> — visually and intuitively.
+      Chronovent blends the logic of programming with a clean, diagram-based interface to give you full control without writing complex code.
+    </p>
+
+    <div class="status">
+      Currently in active development
+    </div>
+
+    <p id="contact"></p>
+  </main>
+
+  <footer>
+    <p>© 2025-2026 Chronovent. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const user = "contact";
+    const domain = "chronovent.com";
+    const el = document.getElementById("contact");
+    if (el) {
+      el.innerHTML = `Get in touch: <a href="mailto:${user}@${domain}">${user}@${domain}</a>`;
+    }
+  </script>
 </body>
 </html>
- 
