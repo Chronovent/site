@@ -128,13 +128,15 @@
     <p>© 2025-2026 Chronovent. All rights reserved.</p>
   </footer>
 
-  <script>
-    const user = "contact";
-    const domain = "chronovent.com";
-    const el = document.getElementById("contact");
-    if (el) {
-      el.innerHTML = `Get in touch: <a href="mailto:${user}@${domain}">${user}@${domain}</a>`;
-    }
-  </script>
+  <!--script>
+  // email na em Base64
+  const encodedEmail = "Y29udGFjdEBjaHJvbm92ZW50LmNvbQ==";
+  const email = atob(encodedEmail);
+  
+  const el = document.getElementById("contact");
+  if (el) {
+    el.innerHTML = `Get in touch: <a href="mailto:${email}">${email}</a>`;
+  }
+</script-->
 </body>
 </html>
